@@ -9,3 +9,4 @@ This is a Discord bot meant to facilitate the remote management of Bobby's Dedic
 
 /terminate_server: Forceibly stops the server if the process is not responding.
 
+/hp_check: Spits out the current CPU & RAM usage on the server.
