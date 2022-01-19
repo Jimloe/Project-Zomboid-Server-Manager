@@ -15,7 +15,7 @@ bot = commands.Bot()
 # Setup allowed mentions by Discord bot
 disnake.AllowedMentions(everyone=True, users=True, roles=True, replied_user=True)
 
-guilds = [366615694013366282]  # Test server 924304884843548702] # Bawsks server 366615694013366282
+guilds = [] # Enter Discord servers here.
 
 serverproc = None
 
