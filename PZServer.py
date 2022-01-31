@@ -28,6 +28,22 @@ async def on_ready():
     await bot.change_presence(activity=activity)
 
 
+@bot.event
+async def on_slash_command_error(inter, error):
+    print(f'Ran into an error:{error}')
+    await inter.send("I didn't understand your command")
+
+
+@bot.event
+async def on_disconnect(dc):
+    print(f'Disconnected from Discord:{dc}')
+
+
+@bot.event
+async def on_resumed():
+    print(f'Reconnected to discord!')
+
+
 @bot.slash_command(guild_ids=guilds)
 async def start_server(inter):
     global serverproc
